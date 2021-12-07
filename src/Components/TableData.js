@@ -49,7 +49,7 @@ const TableData = ({ expenceName, amount, id, serial }) => {
   return (
     <>
       <tbody className="text-sm border-b border-gray-300 md:text-base text-left">
-        <tr>
+        <tr className="h-14">
           <td className="w-10 text-center">{serial}</td>
           <td className="p-2">{expenceName}</td>
           <td className="p-2">₹{amount}</td>
@@ -100,7 +100,7 @@ const TableData = ({ expenceName, amount, id, serial }) => {
                 }
                 value={Edit.editedData.amount}
               />
-              <div className="block mx-auto my-1">
+              <div className="block mx-auto my-2">
                 <Button
                   onClick={(e) => saveEditedData(e, id)}
                   className="m-1 text-sm border-2 border-transparent bg-green-600 px-3 py-1 text-white rounded-md hover:bg-green-700"

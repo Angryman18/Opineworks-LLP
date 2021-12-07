@@ -32,7 +32,6 @@ const userSlicer = createSlice({
         return item.id !== actions.payload;
       });
       state.userData = newState
-      console.log(JSON.stringify(actions.payload))
       localStorage.setItem('expence', JSON.stringify(state.userData))
     },
     retrieveItems(state, actions) {

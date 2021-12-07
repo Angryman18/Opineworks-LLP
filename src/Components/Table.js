@@ -8,7 +8,7 @@ const Table = () => {
     <div className="w-11/12 mx-auto flex justify-center items-center">
       <table>
         <thead>
-          <tr className="sm:text-base h-10 text-sm border-b border-t border-gray-100 bg-purple-800 text-white">
+          <tr className="sm:text-base h-12 text-sm border-b border-t border-gray-100 bg-purple-800 text-white">
             <th className="text-left px-2 min-w-20px w-20 text-center rounded-tl-lg rounded-bl-lg">
               Sl. No
             </th>
@@ -36,7 +36,7 @@ const Table = () => {
         ) : (
           <tbody>
             <tr>
-              <td colSpan="3">No Item Found</td>
+              <td colSpan="4"><p className="text-xl">No Item Found</p></td>
             </tr>
           </tbody>
         )}
